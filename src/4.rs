@@ -26,10 +26,10 @@ impl Solution {
         let mut n_idx = 0;
         let mut last_val = 0;
         let mut current_val = 0;
-        while count <= max_idx{
+        while count <= max_idx {
             last_val = current_val;
             count = count + 1;
-            if m_idx < m && n_idx < n{
+            if m_idx < m && n_idx < n {
                 //两者都有元素
                 let mval = nums1[m_idx];
                 let nval = nums2[n_idx];
@@ -43,13 +43,13 @@ impl Solution {
                     current_val = nval;
                 }
                 //continue;
-            } else if m_idx < m && n_idx >= n{
+            } else if m_idx < m && n_idx >= n {
                 //只有nums1有元素
                 println!("smval:{:?}",nums1[m_idx]);
                 current_val = nums1[m_idx];
                 m_idx += 1;
                 //continue;
-            } else if n_idx < n && m_idx >= m{
+            } else if n_idx < n && m_idx >= m {
                 //只有nums2有元素
                 println!("snval:{:?}",nums2[n_idx]);
                 current_val = nums2[n_idx];
