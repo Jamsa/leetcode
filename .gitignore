@@ -2,3 +2,5 @@ rust/target
 .DS_store
 rust/.idea
 java/out
+java/build
+java/.gradle
