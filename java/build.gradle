@@ -4,6 +4,10 @@ apply plugin: 'application'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
+repositories{
+    mavenCentral()
+}
+
 application {
     mainClassName = project.hasProperty("mainClass") ? project.getProperty("mainClass") : "NULL"
     mainClassName = "com.github.jamsa.leetcode."+mainClassName

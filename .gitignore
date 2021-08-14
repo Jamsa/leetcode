@@ -4,3 +4,8 @@ rust/.idea
 java/out
 java/build
 java/.gradle
+java/.vscode
+java/bin
+java/.settings
+java/.project
+java/.classpath
