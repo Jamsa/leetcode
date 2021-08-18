@@ -29,7 +29,7 @@ import java.util.stream.Collectors;
  * @time : 2021/7/22 7:00 下午
  * @author: zhujie
  */
-public class NextPermutation {
+public class Solution31 {
 
     /**
      * 数组逆序
@@ -102,7 +102,7 @@ public class NextPermutation {
     }
 
     public static void main(String[] args) {
-        NextPermutation solution = new NextPermutation();
+        Solution31 solution = new Solution31();
         int[] nums = new int[]{1,2,3,7,6,5,4};
         solution.nextPermutation(nums);
         solution.printResult(nums);

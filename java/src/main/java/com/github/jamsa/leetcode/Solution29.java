@@ -1,7 +1,7 @@
 package com.github.jamsa.leetcode;
 
 /**
- * 28. 两数相除
+ * 29. 两数相除
  * https://leetcode-cn.com/problems/divide-two-integers/
  *
  * 直接用加法处理，理论上可以求解，但是遇到大数字时，求解会非常耗时
@@ -9,7 +9,7 @@ package com.github.jamsa.leetcode;
  * @time : 2021/7/14 4:33 下午
  * @author: zhujie
  */
-public class DivideTwoIntegers {
+public class Solution29 {
     public int divide(int dividend, int divisor) {
         if(divisor==1) return dividend;
         if(divisor==-1){
@@ -50,7 +50,7 @@ public class DivideTwoIntegers {
     }
 
     public static void main(String[] args) {
-        DivideTwoIntegers solution = new DivideTwoIntegers();
+        Solution29 solution = new Solution29();
         System.out.println(solution.divide(-2147483648,2));
 
         System.out.println(solution.divide(-2147483648,-1));

@@ -11,7 +11,7 @@ import java.util.PriorityQueue;
  * @author: zhujie
  */
 
-public class SwapNodesInPairs {
+public class Solution24 {
 
     public static ListNode swapPairs(ListNode head) {
         if (head == null ) return null;

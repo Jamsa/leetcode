@@ -9,7 +9,7 @@ import java.util.Arrays;
  * @time : 2021/7/12 2:36 下午
  * @author: zhujie
  */
-public class RemoveElement {
+public class Solution27 {
 
     public int removeElement(int[] nums, int val) {
         if(nums==null||nums.length==0) return 0;
@@ -29,7 +29,7 @@ public class RemoveElement {
     }
 
     public static void main(String[] args) {
-        RemoveElement solution = new RemoveElement();
+        Solution27 solution = new Solution27();
         int[] nums = new int[]{1,1,3};
         int result = solution.removeElement(nums,1);
         Arrays.stream(nums).forEach(i->System.out.print(i+","));

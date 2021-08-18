@@ -26,7 +26,7 @@ import java.util.Stack;
  * @time : 2021/7/26 7:49 下午
  * @author: zhujie
  */
-public class LongestValidParentheses {
+public class Solution32 {
     public int longestValidParentheses1(String s) {
         //分段计数结果
         List<Integer> results = new ArrayList<>();
@@ -116,7 +116,7 @@ public class LongestValidParentheses {
     }
 
     public static void main(String[] args) {
-        LongestValidParentheses solution = new LongestValidParentheses();
+        Solution32 solution = new Solution32();
         System.out.println(solution.longestValidParentheses("()(()"));
         System.out.println(solution.longestValidParentheses(")(()))"));
         System.out.println(solution.longestValidParentheses("(()"));

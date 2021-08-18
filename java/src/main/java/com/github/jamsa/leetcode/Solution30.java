@@ -1,6 +1,5 @@
 package com.github.jamsa.leetcode;
 
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -9,10 +8,13 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
+ * 30. 串联所有单词的子串
+ * https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words/
+ *
  * @time : 2021/7/14 7:59 下午
  * @author: zhujie
  */
-public class SubstringWithConcatinationOfAllWords {
+public class Solution30 {
 
     private Long countSubstring(String s,String substr){
         long count = 0;
@@ -85,7 +87,7 @@ public class SubstringWithConcatinationOfAllWords {
     }
 
     public static void main(String[] args) {
-        SubstringWithConcatinationOfAllWords solution = new SubstringWithConcatinationOfAllWords();
+        Solution30 solution = new Solution30();
         //System.out.println(solution.countSubstring(s,"ba"));
 
         List<Integer> result = solution.findSubstring("ababaab",new String[]{"ab","ba","ba"});

@@ -1,8 +1,6 @@
 package com.github.jamsa.leetcode;
 
 import java.util.Arrays;
-import java.util.SortedSet;
-import java.util.TreeSet;
 
 /**
  * 26. 删除有序数组中的重复项
@@ -11,7 +9,7 @@ import java.util.TreeSet;
  * @time : 2021/7/12 2:36 下午
  * @author: zhujie
  */
-public class RemoveDuplicatesFromSortedArray {
+public class Solution26 {
     public int removeDuplicates(int[] nums) {
         if(nums==null||nums.length==1) return 1;
         int p = 0,q = 1;
@@ -26,7 +24,7 @@ public class RemoveDuplicatesFromSortedArray {
     }
 
     public static void main(String[] args) {
-        RemoveDuplicatesFromSortedArray solution = new RemoveDuplicatesFromSortedArray();
+        Solution26 solution = new Solution26();
         int[] nums = new int[]{1,1,3};
         int result = solution.removeDuplicates(nums);
         Arrays.stream(nums).forEach(i->System.out.print(i+","));

@@ -1,7 +1,5 @@
 package com.github.jamsa.leetcode;
 
-import java.util.Arrays;
-
 /**
  *  28. 实现 strStr()
  *  https://leetcode-cn.com/problems/implement-strstr/
@@ -9,7 +7,7 @@ import java.util.Arrays;
  * @time : 2021/7/12 2:36 下午
  * @author: zhujie
  */
-public class ImplementStrStr {
+public class Solution28 {
 
     public boolean cmp(String haystack,int beginIndex, int endIndex,String needle){
         for(int i=beginIndex;i<endIndex;i++){
@@ -57,7 +55,7 @@ public class ImplementStrStr {
     }
 
     public static void main(String[] args) {
-        ImplementStrStr solution = new ImplementStrStr();
+        Solution28 solution = new Solution28();
         int result = solution.strStr("hello","ll");
         System.out.println(result);
         result = solution.strStr1("a","a");

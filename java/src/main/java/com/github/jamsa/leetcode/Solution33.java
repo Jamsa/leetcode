@@ -10,7 +10,7 @@ package com.github.jamsa.leetcode;
  * @time : 2021/8/3 7:31 下午
  * @author: zhujie
  */
-public class SearchInRotatedSortedArray {
+public class Solution33 {
     public int search(int[] nums, int target) {
         //双指针
         int left = 0;
@@ -44,7 +44,7 @@ public class SearchInRotatedSortedArray {
     }
 
     public static void main(String[] args) {
-        SearchInRotatedSortedArray solution = new SearchInRotatedSortedArray();
+        Solution33 solution = new Solution33();
         int[] nums = new int[]{4, 5, 6,7,0,1,2};
 
         System.out.println(solution.search(nums,0));

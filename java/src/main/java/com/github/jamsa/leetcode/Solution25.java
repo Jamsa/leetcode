@@ -11,7 +11,7 @@ import java.util.List;
  * @author: zhujie
  */
 
-public class ReverseNodesInKGroup {
+public class Solution25 {
 
     //每次取K个元素保存起来，翻转，如果取不足K个元素，则不进行翻转
     public static ListNode reverseKGroup(ListNode head, int k) {
